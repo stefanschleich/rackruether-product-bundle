@@ -1,0 +1,47 @@
+{
+    "name": "rackruether/product-bundle",
+    "type": "contao-bundle",
+    "description": "Adds Product functionality to Contao 4",
+    "keywords": [
+        "contao",
+        "product",
+        "catalog",
+    ],
+    "homepage": "https://www.plusx.de",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stefan Schleich",
+            "email": "stefan@plusx.de",
+            "homepage": "https://www.plusx.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "contao/core-bundle": "^4.7",
+        "patchwork/utf8": "^1.3",
+        "symfony/config": "3.4.* || 4.1.* || 4.2.*",
+        "symfony/dependency-injection": "3.4.* || 4.1.* || 4.2.*",
+        "symfony/http-kernel": "3.4.* || 4.1.* || 4.2.*",
+        "symfony/yaml": "3.4.* || 4.1.* || 4.2.*"
+
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.3.1",
+    },
+    "extra": {
+        "contao-manager-plugin": "RackRuether\\ProductBundle\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "RackRuether\\ProductBundle\\": "src"
+        }
+    },
+    "prefer-stable": true,
+    "support": {
+        "email": "stefan@plusx.de",
+        "issues": "https://github.com/stefanschleich/rackruether-product-bundle/issues",
+        "source": "https://github.com/stefanschleich/rackruether-product-bundle"
+    }
+}

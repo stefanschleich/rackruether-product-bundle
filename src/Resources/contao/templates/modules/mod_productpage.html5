@@ -1,0 +1,46 @@
+<?php $this->extend('block_unsearchable'); ?>
+
+<?php $this->block('content'); ?>
+
+  <?php foreach($this->product as $category): ?>
+    <article class="<?= $category['class'] ?>">
+      <h2><?= $category['headline'] ?></h2>
+
+      <?php foreach ($category['items'] as $product): ?>
+        <section class="<?= $product->class ?>">
+          <h3 id="<?= $product->alias ?>"><?= $product->title ?></h3>
+          <div class="ce_text block">
+
+            <?php if (!$product->addBefore): ?>
+              <?= $product->description ?>
+            <?php endif; ?>
+
+            <?php if ($product->addImage): ?>
+              <?php $this->insert('image', (array) $product); ?>
+            <?php endif; ?>
+
+            <?php if ($product->addBefore): ?>
+              <?= $product->description ?>
+            <?php endif; ?>
+
+          </div>
+
+          <?php if ($product->enclosure): ?>
+            <ul class="enclosure">
+              <?php foreach ($product->enclosure as $enclosure): ?>
+                <li class="download-element ext-<?= $enclosure['extension'] ?>">
+                  <a href="<?= $enclosure['href'] ?>" title="<?= $enclosure['title'] ?>"><?= $enclosure['link'] ?> <span class="size">(<?= $enclosure['filesize'] ?>)</span></a>
+                </li>
+              <?php endforeach; ?>
+            </ul>
+          <?php endif; ?>
+
+          <p class="info"><?= $product->info ?></p>
+        </section>
+      <?php endforeach; ?>
+
+      <p class="toplink"><a href="<?= $this->request ?>#top"><?= $this->topLink ?></a></p>
+    </article>
+  <?php endforeach; ?>
+
+<?php $this->endblock(); ?>

@@ -1,0 +1,26 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/tl_user.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="tl_user.products.0">
+        <source>Allowed Product categories</source>
+        <target>Erlaubte Produkt-Kategorien</target>
+      </trans-unit>
+      <trans-unit id="tl_user.products.1">
+        <source>Here you can grant access to one or more Product categories.</source>
+        <target>Hier können Sie den Zugriff auf eine oder mehrere Produkt-Kategorien erlauben.</target>
+      </trans-unit>
+      <trans-unit id="tl_user.productp.0">
+        <source>Product category permissions</source>
+        <target>Produkt-Kategorierechte</target>
+      </trans-unit>
+      <trans-unit id="tl_user.productp.1">
+        <source>Here you can define the Product category permissions.</source>
+        <target>Hier können Sie die Produkt-Kategorierechte festlegen.</target>
+      </trans-unit>
+      <trans-unit id="tl_user.product_legend">
+        <source>Product permissions</source>
+        <target>Produkt-Rechte</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

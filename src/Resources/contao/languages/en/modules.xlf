@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/modules.php" source-language="en">
+    <body>
+      <trans-unit id="MOD.product.0">
+        <source>Product</source>
+      </trans-unit>
+      <trans-unit id="MOD.product.1">
+        <source>Manage products</source>
+      </trans-unit>
+      <trans-unit id="MOD.tl_product">
+        <source>Products</source>
+      </trans-unit>
+      <trans-unit id="FMD.product">
+        <source>Product</source>
+      </trans-unit>
+      <trans-unit id="FMD.productlist.0">
+        <source>Product list</source>
+      </trans-unit>
+      <trans-unit id="FMD.productlist.1">
+        <source>Adds a list of products to the page</source>
+      </trans-unit>
+      <trans-unit id="FMD.productreader.0">
+        <source>Product reader</source>
+      </trans-unit>
+      <trans-unit id="FMD.productreader.1">
+        <source>Shows the product description</source>
+      </trans-unit>
+      <trans-unit id="FMD.productpage.0">
+        <source>Product page</source>
+      </trans-unit>
+      <trans-unit id="FMD.productpage.1">
+        <source>Shows the Product list and Product reader on the same page</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

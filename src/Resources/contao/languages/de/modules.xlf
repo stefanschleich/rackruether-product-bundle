@@ -1,0 +1,46 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/modules.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="MOD.product.0">
+        <source>Products</source>
+        <target>Sortiment</target>
+      </trans-unit>
+      <trans-unit id="MOD.product.1">
+        <source>Manage products</source>
+        <target>Sortiment verwalten</target>
+      </trans-unit>
+      <trans-unit id="MOD.tl_product">
+        <source>Products</source>
+        <target>Produkte</target>
+      </trans-unit>
+      <trans-unit id="FMD.product">
+        <source>Product</source>
+        <target>Produkt</target>
+      </trans-unit>
+      <trans-unit id="FMD.productlist.0">
+        <source>Product list</source>
+        <target>Produkt-Liste</target>
+      </trans-unit>
+      <trans-unit id="FMD.productlist.1">
+        <source>Adds a list of products to the page</source>
+        <target>Fügt der Seite eine Liste von Produkten hinzu</target>
+      </trans-unit>
+      <trans-unit id="FMD.productreader.0">
+        <source>Product reader</source>
+        <target>Produkt-Leser</target>
+      </trans-unit>
+      <trans-unit id="FMD.productreader.1">
+        <source>Shows the product description</source>
+        <target>Stellt die Beschreibung zu einen Produkt dar</target>
+      </trans-unit>
+      <trans-unit id="FMD.productpage.0">
+        <source>Product page</source>
+        <target>Produkt-Seite</target>
+      </trans-unit>
+      <trans-unit id="FMD.productpage.1">
+        <source>Shows the Product list and Product reader on the same page</source>
+        <target>Gibt die Produkt-Liste und den Produkt-Leser auf derselben Seite aus</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

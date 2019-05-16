@@ -1,0 +1,14 @@
+<?php $this->extend('block_unsearchable'); ?>
+
+<?php $this->block('content'); ?>
+
+  <?php foreach($this->product as $category): ?>
+    <h2><?= $category['headline'] ?></h2>
+    <ul class="<?= $category['class'] ?>">
+      <?php foreach ($category['items'] as $product): ?>
+        <li class="<?= $product['class'] ?>"><a href="<?= $product['href'] ?>" title="<?= $product['title'] ?>"><?= $product['title'] ?></a></li>
+      <?php endforeach; ?>
+    </ul>
+  <?php endforeach; ?>
+
+<?php $this->endblock(); ?>

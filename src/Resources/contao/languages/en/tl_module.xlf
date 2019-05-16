@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/tl_module.php" source-language="en">
+    <body>
+      <trans-unit id="tl_module.product_categories.0">
+        <source>Product categories</source>
+      </trans-unit>
+      <trans-unit id="tl_module.product_categories.1">
+        <source>Please select one or more Product categories.</source>
+      </trans-unit>
+      <trans-unit id="tl_module.product_readerModule.0">
+        <source>Product reader module</source>
+      </trans-unit>
+      <trans-unit id="tl_module.product_readerModule.1">
+        <source>Automatically switch to the Product reader if an item has been selected.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

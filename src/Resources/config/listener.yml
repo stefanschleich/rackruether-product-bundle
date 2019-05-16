@@ -1,0 +1,6 @@
+services:
+    rackruether_product.listener.insert_tags:
+        class: RackRuether\ProductBundle\EventListener\InsertTagsListener
+        arguments:
+            - "@contao.framework"
+        public: true
