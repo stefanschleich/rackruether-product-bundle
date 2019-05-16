@@ -32,6 +32,18 @@
       <trans-unit id="tl_product.description.1">
         <source>Please enter the description.</source>
       </trans-unit>
+      <trans-unit id="tl_product.ingredients.0">
+        <source>Ingredients</source>
+      </trans-unit>
+      <trans-unit id="tl_product.ingredients.1">
+        <source>Please add the Ingredients of the Product.</source>
+      </trans-unit>
+      <trans-unit id="tl_product.ingredientName.0">
+        <source>Name</source>
+      </trans-unit>
+      <trans-unit id="tl_product.ingredientName.1">
+        <source>Please enter the name of the ingredient</source>
+      </trans-unit>
       <trans-unit id="tl_product.addImage.0">
         <source>Add an image</source>
       </trans-unit>
@@ -67,6 +79,9 @@
       </trans-unit>
       <trans-unit id="tl_product.description_legend">
         <source>Description</source>
+      </trans-unit>
+      <trans-unit id="tl_product.details_legend">
+        <source>Details</source>
       </trans-unit>
       <trans-unit id="tl_product.image_legend">
         <source>Image settings</source>

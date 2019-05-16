@@ -41,6 +41,22 @@
         <source>Please enter the description.</source>
         <target>Bitte geben Sie die Beschreibung ein.</target>
       </trans-unit>
+      <trans-unit id="tl_product.ingredients.0">
+        <source>Ingredients</source>
+        <target>Zutaten</target>
+      </trans-unit>
+      <trans-unit id="tl_product.ingredients.1">
+        <source>Please add the Ingredients of the Product.</source>
+        <target>Bitte geben Sie die Zutaten des Produkts an.</target>
+      </trans-unit>
+      <trans-unit id="tl_product.ingredientName.0">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="tl_product.ingredientName.1">
+        <source>Please enter the name of the ingredient</source>
+        <target>Bitte geben Sie den Namen der Zutat ein.</target>
+      </trans-unit>
       <trans-unit id="tl_product.addImage.0">
         <source>Add an image</source>
         <target>Ein Bild hinzufügen</target>
@@ -88,6 +104,9 @@
       <trans-unit id="tl_product.description_legend">
         <source>Description</source>
         <target>Beschreibung</target>
+      </trans-unit>
+      <trans-unit id="tl_product.details_legend">
+        <source>Details</source>
       </trans-unit>
       <trans-unit id="tl_product.image_legend">
         <source>Image settings</source>

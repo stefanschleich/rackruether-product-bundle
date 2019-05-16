@@ -102,7 +102,7 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 	'palettes' => array
 	(
 		'__selector__'                => array('addImage', 'addEnclosure', 'overwriteMeta'),
-		'default'                     => '{title_legend},title,subTitle,alias,author;{description_legend},description;{image_legend},addImage;{enclosure_legend:hide},addEnclosure;{expert_legend:hide},noComments;{publish_legend},published'
+		'default'                     => '{title_legend},title,subTitle,alias,author;{description_legend},description;{details_legend},ingredients;{image_legend},addImage;{enclosure_legend:hide},addEnclosure;{expert_legend:hide},noComments;{publish_legend},published'
 	),
 
 	// Subpalettes
@@ -196,6 +196,22 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 			'eval'                    => array('mandatory'=>true, 'rte'=>'tinyMCE', 'helpwizard'=>true),
 			'explanation'             => 'insertTags',
 			'sql'                     => "text NULL"
+		),
+		'ingredients' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['ingredients'],
+			'exclude'                 => true,
+			'inputType' => 'multiColumnWizard',
+			'eval'      => [
+				'columnFields' => [
+					'ingredientName' => [
+						'label'     => &$GLOBALS['TL_LANG']['tl_product']['ingredientName'],
+						'exclude'   => true,
+						'inputType' => 'text'
+					],
+				],
+			],
+			'sql'       => 'blob NULL',
 		),
 		'addImage' => array
 		(
