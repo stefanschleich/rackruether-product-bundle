@@ -102,7 +102,7 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 	'palettes' => array
 	(
 		'__selector__'                => array('addImage', 'addEnclosure', 'overwriteMeta'),
-		'default'                     => '{title_legend},title,alias,author;{description_legend},description;{image_legend},addImage;{enclosure_legend:hide},addEnclosure;{expert_legend:hide},noComments;{publish_legend},published'
+		'default'                     => '{title_legend},title,subTitle,alias,author;{description_legend},description;{image_legend},addImage;{enclosure_legend:hide},addEnclosure;{expert_legend:hide},noComments;{publish_legend},published'
 	),
 
 	// Subpalettes
@@ -140,6 +140,17 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 		'title' => array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['title'],
+			'exclude'                 => true,
+			'search'                  => true,
+			'sorting'                 => true,
+			'flag'                    => 1,
+			'inputType'               => 'text',
+			'eval'                    => array('mandatory'=>true, 'maxlength'=>255, 'tl_class'=>'long'),
+			'sql'                     => "varchar(255) NOT NULL default ''"
+		),
+		'subTitle' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['subTitle'],
 			'exclude'                 => true,
 			'search'                  => true,
 			'sorting'                 => true,

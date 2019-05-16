@@ -2,11 +2,17 @@
 <xliff version="1.1">
   <file datatype="php" original="src/Resources/contao/languages/en/tl_product.php" source-language="en">
     <body>
-      <trans-unit id="tl_product.question.0">
+      <trans-unit id="tl_product.title.0">
         <source>Title</source>
       </trans-unit>
-      <trans-unit id="tl_product.question.1">
+      <trans-unit id="tl_product.title.1">
         <source>Please enter the title.</source>
+      </trans-unit>
+      <trans-unit id="tl_product.subTitle.0">
+        <source>Subtitle</source>
+      </trans-unit>
+      <trans-unit id="tl_product.subTitle.1">
+        <source>Please enter the subtitle.</source>
       </trans-unit>
       <trans-unit id="tl_product.alias.0">
         <source>Product alias</source>

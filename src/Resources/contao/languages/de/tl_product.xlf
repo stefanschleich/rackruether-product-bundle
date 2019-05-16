@@ -9,6 +9,14 @@
         <source>Please enter the title.</source>
         <target>Bitte geben Sie den Titel ein.</target>
       </trans-unit>
+      <trans-unit id="tl_product.subTitle.0">
+        <source>Subtitle</source>
+        <target>Untertitel</target>
+      </trans-unit>
+      <trans-unit id="tl_product.subTitle.1">
+        <source>Please enter the subtitle.</source>
+        <target>Bitte geben Sie den Untertitel ein.</target>
+      </trans-unit>
       <trans-unit id="tl_product.alias.0">
         <source>Product alias</source>
         <target>Produkt-Alias</target>
