@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace RackRuether\ProductBundle\ContaoManager;
+
 /*
  * This file is part of Contao.
  *
