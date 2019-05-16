@@ -102,7 +102,7 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 	'palettes' => array
 	(
 		'__selector__'                => array('addImage', 'addEnclosure', 'overwriteMeta'),
-		'default'                     => '{title_legend},title,subTitle,alias,author;{description_legend},description;{details_legend},weight,ingredients;{image_legend},addImage;{enclosure_legend:hide},addEnclosure;{expert_legend:hide},noComments;{publish_legend},published'
+		'default'                     => '{title_legend},title,subTitle,alias,author;{description_legend},description;{details_legend},weight,allergyFriendly,organic,german,gmFree;{ingredients_legend},ingredients;{image_legend},addImage;{enclosure_legend:hide},addEnclosure;{expert_legend:hide},noComments;{publish_legend},published'
 	),
 
 	// Subpalettes
@@ -204,6 +204,42 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 			'inputType'               => 'text',
 			'eval'                    => array('maxlength'=>5, 'rgxp'=>'natural', 'tl_class'=>'w50'),
 			'sql'                     => "smallint(5) unsigned NOT NULL default 0"
+		),
+		'allergyFriendly' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['allergyFriendly'],
+			'exclude'                 => true,
+			'filter'                  => true,
+			'inputType'               => 'checkbox',
+			'eval'                    => array('tl_class'=>'clr'),
+			'sql'                     => "char(1) NOT NULL default ''"
+		),
+		'organic' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['organic'],
+			'exclude'                 => true,
+			'filter'                  => true,
+			'inputType'               => 'checkbox',
+			'eval'                    => array('tl_class'=>''),
+			'sql'                     => "char(1) NOT NULL default ''"
+		),
+		'german' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['german'],
+			'exclude'                 => true,
+			'filter'                  => true,
+			'inputType'               => 'checkbox',
+			'eval'                    => array('tl_class'=>''),
+			'sql'                     => "char(1) NOT NULL default ''"
+		),
+		'gmFree' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['gmFree'],
+			'exclude'                 => true,
+			'filter'                  => true,
+			'inputType'               => 'checkbox',
+			'eval'                    => array('tl_class'=>''),
+			'sql'                     => "char(1) NOT NULL default ''"
 		),
 		'ingredients' => array
 		(

@@ -41,6 +41,46 @@
         <source>Please enter the description.</source>
         <target>Bitte geben Sie die Beschreibung ein.</target>
       </trans-unit>
+      <trans-unit id="tl_product.weight.0">
+        <source>Weight in grams</source>
+        <target>Gewicht in Gramm</target>
+      </trans-unit>
+      <trans-unit id="tl_product.weight.1">
+        <source>Please enter the weight of the product in grams.</source>
+        <target>Bitte geben Sie das Gewicht des Produkts in Gramm ein.</target>
+      </trans-unit>
+      <trans-unit id="tl_product.allergyFriendly.0">
+        <source>Allergy friendly</source>
+        <target>Allergikerfreundlich</target>
+      </trans-unit>
+      <trans-unit id="tl_product.allergyFriendly.1">
+        <source>Mark the Product as allergy friendly.</source>
+        <target>Produkt als Allergikerfreundlich markieren.</target>
+      </trans-unit>
+      <trans-unit id="tl_product.organic.0">
+        <source>Organic</source>
+        <target>Bio</target>
+      </trans-unit>
+      <trans-unit id="tl_product.organic.1">
+        <source>Mark the Product as organic.</source>
+        <target>Produkt als Bio markieren.</target>
+      </trans-unit>
+      <trans-unit id="tl_product.german.0">
+        <source>German</source>
+        <target>Deutsch</target>
+      </trans-unit>
+      <trans-unit id="tl_product.german.1">
+        <source>Mark the Product as produced in Germany.</source>
+        <target>Produkt als in Deutschland hergestellt markieren.</target>
+      </trans-unit>
+      <trans-unit id="tl_product.gmFree.0">
+        <source>GM-free</source>
+        <target>Gentechnikfrei</target>
+      </trans-unit>
+      <trans-unit id="tl_product.gmFree.1">
+        <source>Mark the Product as GM-Free.</source>
+        <target>Produkt als Gentechnikfrei markieren.</target>
+      </trans-unit>
       <trans-unit id="tl_product.ingredients.0">
         <source>Ingredients</source>
         <target>Zutaten</target>
@@ -107,14 +147,11 @@
       </trans-unit>
       <trans-unit id="tl_product.details_legend">
         <source>Details</source>
+        <target>Details</target>
       </trans-unit>
-      <trans-unit id="tl_product.weight.0">
-        <source>Weight in grams</source>
-        <target>Gewicht in Gramm</target>
-      </trans-unit>
-      <trans-unit id="tl_product.weight.1">
-        <source>Please enter the weight of the product in grams.</source>
-        <target>Bitte geben Sie das Gewicht des Produkts in Gramm ein.</target>
+      <trans-unit id="tl_product.ingredients_legend">
+        <source>Ingredients</source>
+        <target>Zutaten</target>
       </trans-unit>
       <trans-unit id="tl_product.image_legend">
         <source>Image settings</source>

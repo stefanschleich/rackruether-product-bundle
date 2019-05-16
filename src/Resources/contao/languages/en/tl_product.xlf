@@ -50,6 +50,30 @@
       <trans-unit id="tl_product.weight.1">
         <source>Please enter the weight of the product in grams.</source>
       </trans-unit>
+      <trans-unit id="tl_product.allergyFriendly.0">
+        <source>Allergy friendly</source>
+      </trans-unit>
+      <trans-unit id="tl_product.allergyFriendly.1">
+        <source>Mark the Product as allergy friendly.</source>
+      </trans-unit>
+      <trans-unit id="tl_product.organic.0">
+        <source>Organic</source>
+      </trans-unit>
+      <trans-unit id="tl_product.organic.1">
+        <source>Mark the Product as organic.</source>
+      </trans-unit>
+      <trans-unit id="tl_product.german.0">
+        <source>German</source>
+      </trans-unit>
+      <trans-unit id="tl_product.german.1">
+        <source>Mark the Product as produced in Germany.</source>
+      </trans-unit>
+      <trans-unit id="tl_product.gmFree.0">
+        <source>GM-free</source>
+      </trans-unit>
+      <trans-unit id="tl_product.gmFree.1">
+        <source>Mark the Product as GM-Free.</source>
+      </trans-unit>
       <trans-unit id="tl_product.addImage.0">
         <source>Add an image</source>
       </trans-unit>
@@ -88,6 +112,9 @@
       </trans-unit>
       <trans-unit id="tl_product.details_legend">
         <source>Details</source>
+      </trans-unit>
+      <trans-unit id="tl_product.ingredients_legend">
+        <source>Ingredients</source>
       </trans-unit>
       <trans-unit id="tl_product.image_legend">
         <source>Image settings</source>
