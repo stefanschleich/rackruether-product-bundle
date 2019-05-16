@@ -45,7 +45,7 @@
         <source>Please enter the name of the ingredient.</source>
       </trans-unit>
       <trans-unit id="tl_product.weight.0">
-        <source>Weight in grams</source>
+        <source>Weight (g)</source>
       </trans-unit>
       <trans-unit id="tl_product.weight.1">
         <source>Please enter the weight of the product in grams.</source>
@@ -73,6 +73,54 @@
       </trans-unit>
       <trans-unit id="tl_product.gmFree.1">
         <source>Mark the Product as GM-Free.</source>
+      </trans-unit>
+      <trans-unit id="tl_product.energyKJ.0">
+        <source>Energy (kJ)</source>
+      </trans-unit>
+      <trans-unit id="tl_product.energyKJ.1">
+        <source>Please enter the energy in kilojoule.</source>
+      </trans-unit>
+      <trans-unit id="tl_product.energyKcal.0">
+        <source>Energy (kcal)</source>
+      </trans-unit>
+      <trans-unit id="tl_product.energyKcal.1">
+        <source>Please enter the energy in kilocalories.</source>
+      </trans-unit>
+      <trans-unit id="tl_product.fat.0">
+        <source>Fat (g)</source>
+      </trans-unit>
+      <trans-unit id="tl_product.fat.1">
+        <source>Please enter the amount of fat in grams.</source>
+      </trans-unit>
+      <trans-unit id="tl_product.fatAcid.0">
+        <source>Fatty acid (g)</source>
+      </trans-unit>
+      <trans-unit id="tl_product.fatAcid.1">
+        <source>Please enter the amount of fatty acid in grams.</source>
+      </trans-unit>
+      <trans-unit id="tl_product.carbs.0">
+        <source>Carbs (g)</source>
+      </trans-unit>
+      <trans-unit id="tl_product.carbs.1">
+        <source>Please enter the amount of carbs in grams.</source>
+      </trans-unit>
+      <trans-unit id="tl_product.carbsSugar.0">
+        <source>Sugars (g)</source>
+      </trans-unit>
+      <trans-unit id="tl_product.carbsSugar.1">
+        <source>Please enter the amount of sugars in grams.</source>
+      </trans-unit>
+      <trans-unit id="tl_product.protein.0">
+        <source>Proteins (g)</source>
+      </trans-unit>
+      <trans-unit id="tl_product.protein.1">
+        <source>Please enter the amount of proteins in grams.</source>
+      </trans-unit>
+      <trans-unit id="tl_product.salt.0">
+        <source>Salt (g)</source>
+      </trans-unit>
+      <trans-unit id="tl_product.salt.1">
+        <source>Please enter the amount of salt in grams.</source>
       </trans-unit>
       <trans-unit id="tl_product.addImage.0">
         <source>Add an image</source>
@@ -115,6 +163,9 @@
       </trans-unit>
       <trans-unit id="tl_product.ingredients_legend">
         <source>Ingredients</source>
+      </trans-unit>
+      <trans-unit id="tl_product.nutritional_legend">
+        <source>Nutritional values</source>
       </trans-unit>
       <trans-unit id="tl_product.image_legend">
         <source>Image settings</source>

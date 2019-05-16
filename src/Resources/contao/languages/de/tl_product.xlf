@@ -42,12 +42,12 @@
         <target>Bitte geben Sie die Beschreibung ein.</target>
       </trans-unit>
       <trans-unit id="tl_product.weight.0">
-        <source>Weight in grams</source>
-        <target>Gewicht in Gramm</target>
+        <source>Weight (g)</source>
+        <target>Gewicht (g)</target>
       </trans-unit>
       <trans-unit id="tl_product.weight.1">
         <source>Please enter the weight of the product in grams.</source>
-        <target>Bitte geben Sie das Gewicht des Produkts in Gramm ein.</target>
+        <target>Bitte geben Sie das Gewicht des Produkts in gramm ein.</target>
       </trans-unit>
       <trans-unit id="tl_product.allergyFriendly.0">
         <source>Allergy friendly</source>
@@ -96,6 +96,70 @@
       <trans-unit id="tl_product.ingredientName.1">
         <source>Please enter the name of the ingredient</source>
         <target>Bitte geben Sie den Namen der Zutat ein.</target>
+      </trans-unit>
+      <trans-unit id="tl_product.energyKJ.0">
+        <source>Energy (kJ)</source>
+        <target>Energie (kJ)</target>
+      </trans-unit>
+      <trans-unit id="tl_product.energyKJ.1">
+        <source>Please enter the energy in kilojoule.</source>
+        <target>Bitte geben Sie die Energie in Kilojoule ein.</target>
+      </trans-unit>
+      <trans-unit id="tl_product.energyKcal.0">
+        <source>Energy (kcal)</source>
+        <target>Energie (kcal)</target>
+      </trans-unit>
+      <trans-unit id="tl_product.energyKcal.1">
+        <source>Please enter the energy in kilocalories.</source>
+        <target>Bitte geben Sie die Energie in Kilokalorien ein.</target>
+      </trans-unit>
+      <trans-unit id="tl_product.fat.0">
+        <source>Fat (g)</source>
+        <target>Fett (g)</target>
+      </trans-unit>
+      <trans-unit id="tl_product.fat.1">
+        <source>Please enter the amount of fat in grams.</source>
+        <target>Bitte geben Sie den Fett-Anteil in gramm ein.</target>
+      </trans-unit>
+      <trans-unit id="tl_product.fatAcid.0">
+        <source>Fatty acid (g)</source>
+        <target>Ungesättigte Fettsäuren (g)</target>
+      </trans-unit>
+      <trans-unit id="tl_product.fatAcid.1">
+        <source>Please enter the amount of fatty acid in grams.</source>
+        <target>Bitte geben Sie den Anteil der ungesättigten Fettsäuren in gramm ein.</target>
+      </trans-unit>
+      <trans-unit id="tl_product.carbs.0">
+        <source>Carbs (g)</source>
+        <target>Kohlenhydrate (g)</target>
+      </trans-unit>
+      <trans-unit id="tl_product.carbs.1">
+        <source>Please enter the amount of carbs in grams.</source>
+        <target>Bitte geben Sie den Kohlenhydrat-Anteil in gramm ein.</target>
+      </trans-unit>
+      <trans-unit id="tl_product.carbsSugar.0">
+        <source>Sugars (g)</source>
+        <target>Zucker (g)</target>
+      </trans-unit>
+      <trans-unit id="tl_product.carbsSugar.1">
+        <source>Please enter the amount of sugars in grams.</source>
+        <target>Bitte geben Sie den Zucker-Anteil in gramm ein.</target>
+      </trans-unit>
+      <trans-unit id="tl_product.protein.0">
+        <source>Proteins (g)</source>
+        <target>Eiweiß (g)</target>
+      </trans-unit>
+      <trans-unit id="tl_product.protein.1">
+        <source>Please enter the amount of proteins in grams.</source>
+        <target>Bitte geben Sie den Eiweiß-Anteil in gramm ein.</target>
+      </trans-unit>
+      <trans-unit id="tl_product.salt.0">
+        <source>Salt (g)</source>
+        <target>Salz (g)</target>
+      </trans-unit>
+      <trans-unit id="tl_product.salt.1">
+        <source>Please enter the amount of salt in grams.</source>
+        <target>Bitte geben Sie den Salz-Anteil in gramm ein.</target>
       </trans-unit>
       <trans-unit id="tl_product.addImage.0">
         <source>Add an image</source>
@@ -152,6 +216,10 @@
       <trans-unit id="tl_product.ingredients_legend">
         <source>Ingredients</source>
         <target>Zutaten</target>
+      </trans-unit>
+      <trans-unit id="tl_product.nutritional_legend">
+        <source>Nutritional values</source>
+        <target>Nährwerte</target>
       </trans-unit>
       <trans-unit id="tl_product.image_legend">
         <source>Image settings</source>

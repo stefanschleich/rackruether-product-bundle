@@ -102,7 +102,7 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 	'palettes' => array
 	(
 		'__selector__'                => array('addImage', 'addEnclosure', 'overwriteMeta'),
-		'default'                     => '{title_legend},title,subTitle,alias,author;{description_legend},description;{details_legend},weight,allergyFriendly,organic,german,gmFree;{ingredients_legend},ingredients;{image_legend},addImage;{enclosure_legend:hide},addEnclosure;{expert_legend:hide},noComments;{publish_legend},published'
+		'default'                     => '{title_legend},title,subTitle,alias,author;{description_legend},description;{details_legend},weight,allergyFriendly,organic,german,gmFree;{ingredients_legend},ingredients;{nutritional_legend},energyKJ,energyKcal,fat,fatAcid,carbs,carbsSugar,protein,salt;{image_legend},addImage;{enclosure_legend:hide},addEnclosure;{expert_legend:hide},noComments;{publish_legend},published'
 	),
 
 	// Subpalettes
@@ -209,7 +209,6 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['allergyFriendly'],
 			'exclude'                 => true,
-			'filter'                  => true,
 			'inputType'               => 'checkbox',
 			'eval'                    => array('tl_class'=>'clr'),
 			'sql'                     => "char(1) NOT NULL default ''"
@@ -218,7 +217,6 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['organic'],
 			'exclude'                 => true,
-			'filter'                  => true,
 			'inputType'               => 'checkbox',
 			'eval'                    => array('tl_class'=>''),
 			'sql'                     => "char(1) NOT NULL default ''"
@@ -227,7 +225,6 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['german'],
 			'exclude'                 => true,
-			'filter'                  => true,
 			'inputType'               => 'checkbox',
 			'eval'                    => array('tl_class'=>''),
 			'sql'                     => "char(1) NOT NULL default ''"
@@ -236,7 +233,6 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['gmFree'],
 			'exclude'                 => true,
-			'filter'                  => true,
 			'inputType'               => 'checkbox',
 			'eval'                    => array('tl_class'=>''),
 			'sql'                     => "char(1) NOT NULL default ''"
@@ -257,6 +253,70 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 				'tl_class' => 'clr',
 			],
 			'sql'       => 'blob NULL',
+		),
+		'energyKJ' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['energyKJ'],
+			'exclude'                 => true,
+			'inputType'               => 'text',
+			'eval'                    => array('maxlength'=>7, 'rgxp'=>'digit', 'tl_class'=>'w50'),
+			'sql'                     => "decimal(6,1) unsigned NOT NULL default '0.0'"
+		),
+		'energyKcal' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['energyKcal'],
+			'exclude'                 => true,
+			'inputType'               => 'text',
+			'eval'                    => array('maxlength'=>7, 'rgxp'=>'digit', 'tl_class'=>'w50'),
+			'sql'                     => "decimal(6,1) unsigned NOT NULL default '0.0'"
+		),
+		'fat' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['fat'],
+			'exclude'                 => true,
+			'inputType'               => 'text',
+			'eval'                    => array('maxlength'=>7, 'rgxp'=>'digit', 'tl_class'=>'w50'),
+			'sql'                     => "decimal(6,1) unsigned NOT NULL default '0.0'"
+		),
+		'fatAcid' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['fatAcid'],
+			'exclude'                 => true,
+			'inputType'               => 'text',
+			'eval'                    => array('maxlength'=>7, 'rgxp'=>'digit', 'tl_class'=>'w50'),
+			'sql'                     => "decimal(6,1) unsigned NOT NULL default '0.0'"
+		),
+		'carbs' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['carbs'],
+			'exclude'                 => true,
+			'inputType'               => 'text',
+			'eval'                    => array('maxlength'=>7, 'rgxp'=>'digit', 'tl_class'=>'w50'),
+			'sql'                     => "decimal(6,1) unsigned NOT NULL default '0.0'"
+		),
+		'carbsSugar' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['carbsSugar'],
+			'exclude'                 => true,
+			'inputType'               => 'text',
+			'eval'                    => array('maxlength'=>7, 'rgxp'=>'digit', 'tl_class'=>'w50'),
+			'sql'                     => "decimal(6,1) unsigned NOT NULL default '0.0'"
+		),
+		'protein' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['protein'],
+			'exclude'                 => true,
+			'inputType'               => 'text',
+			'eval'                    => array('maxlength'=>7, 'rgxp'=>'digit', 'tl_class'=>'w50'),
+			'sql'                     => "decimal(6,1) unsigned NOT NULL default '0.0'"
+		),
+		'salt' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['salt'],
+			'exclude'                 => true,
+			'inputType'               => 'text',
+			'eval'                    => array('maxlength'=>7, 'rgxp'=>'digit', 'tl_class'=>'w50'),
+			'sql'                     => "decimal(6,1) unsigned NOT NULL default '0.0'"
 		),
 		'addImage' => array
 		(
