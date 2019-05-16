@@ -28,7 +28,7 @@
 
     },
     "require-dev": {
-        "contao/manager-plugin": "^2.3.1",
+        "contao/manager-plugin": "^2.3.1"
     },
     "extra": {
         "contao-manager-plugin": "RackRuether\\ProductBundle\\ContaoManager\\Plugin"
