@@ -34,8 +34,8 @@ if (\defined('TL_MODE') && TL_MODE == 'BE')
 	$GLOBALS['TL_CSS'][] = 'bundles/rackruetherproduct/product.min.css|static';
 }
 
-$GLOBALS['TL_MODELS']['tl_product'] = 'RackRuether\ProductModel';
-$GLOBALS['TL_MODELS']['tl_product_category'] = 'RackRuether\ProductCategoryModel';
+$GLOBALS['TL_MODELS']['tl_product'] = 'ProductModel';
+$GLOBALS['TL_MODELS']['tl_product_category'] = 'ProductCategoryModel';
 
 // Register hooks
 $GLOBALS['TL_HOOKS']['getSearchablePages'][] = array('RackRuether\ModuleProduct', 'getSearchablePages');
