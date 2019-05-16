@@ -102,7 +102,7 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 	'palettes' => array
 	(
 		'__selector__'                => array('addImage', 'addEnclosure', 'overwriteMeta'),
-		'default'                     => '{title_legend},title,subTitle,alias,author;{description_legend},description;{details_legend},ingredients;{image_legend},addImage;{enclosure_legend:hide},addEnclosure;{expert_legend:hide},noComments;{publish_legend},published'
+		'default'                     => '{title_legend},title,subTitle,alias,author;{description_legend},description;{details_legend},weight,ingredients;{image_legend},addImage;{enclosure_legend:hide},addEnclosure;{expert_legend:hide},noComments;{publish_legend},published'
 	),
 
 	// Subpalettes
@@ -197,6 +197,14 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 			'explanation'             => 'insertTags',
 			'sql'                     => "text NULL"
 		),
+		'weight' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['weight'],
+			'exclude'                 => true,
+			'inputType'               => 'text',
+			'eval'                    => array('maxlength'=>5, 'rgxp'=>'natural', 'tl_class'=>'w50'),
+			'sql'                     => "smallint(5) unsigned NOT NULL default 0"
+		),
 		'ingredients' => array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['ingredients'],
@@ -210,6 +218,7 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 						'inputType' => 'text'
 					],
 				],
+				'tl_class' => 'clr',
 			],
 			'sql'       => 'blob NULL',
 		),

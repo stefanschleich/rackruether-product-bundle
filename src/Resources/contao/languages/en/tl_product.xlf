@@ -42,7 +42,13 @@
         <source>Name</source>
       </trans-unit>
       <trans-unit id="tl_product.ingredientName.1">
-        <source>Please enter the name of the ingredient</source>
+        <source>Please enter the name of the ingredient.</source>
+      </trans-unit>
+      <trans-unit id="tl_product.weight.0">
+        <source>Weight in grams</source>
+      </trans-unit>
+      <trans-unit id="tl_product.weight.1">
+        <source>Please enter the weight of the product in grams.</source>
       </trans-unit>
       <trans-unit id="tl_product.addImage.0">
         <source>Add an image</source>

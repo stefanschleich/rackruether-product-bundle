@@ -108,6 +108,14 @@
       <trans-unit id="tl_product.details_legend">
         <source>Details</source>
       </trans-unit>
+      <trans-unit id="tl_product.weight.0">
+        <source>Weight in grams</source>
+        <target>Gewicht in Gramm</target>
+      </trans-unit>
+      <trans-unit id="tl_product.weight.1">
+        <source>Please enter the weight of the product in grams.</source>
+        <target>Bitte geben Sie das Gewicht des Produkts in Gramm ein.</target>
+      </trans-unit>
       <trans-unit id="tl_product.image_legend">
         <source>Image settings</source>
         <target>Bild-Einstellungen</target>
