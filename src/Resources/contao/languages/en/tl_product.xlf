@@ -44,6 +44,12 @@
       <trans-unit id="tl_product.ingredientName.1">
         <source>Please enter the name of the ingredient.</source>
       </trans-unit>
+      <trans-unit id="tl_product.orderNumber.0">
+        <source>Order number</source>
+      </trans-unit>
+      <trans-unit id="tl_product.orderNumber.1">
+        <source>Please enter the order number of the product.</source>
+      </trans-unit>
       <trans-unit id="tl_product.weight.0">
         <source>Weight (g)</source>
       </trans-unit>

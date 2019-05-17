@@ -41,6 +41,14 @@
         <source>Please enter the description.</source>
         <target>Bitte geben Sie die Beschreibung ein.</target>
       </trans-unit>
+      <trans-unit id="tl_product.orderNumber.0">
+        <source>Order number</source>
+        <target>Artikelnummer</target>
+      </trans-unit>
+      <trans-unit id="tl_product.orderNumber.1">
+        <source>Please enter the order number of the product.</source>
+        <target>Bitte geben Sie die Artikelnummer des Produkts ein.</target>
+      </trans-unit>
       <trans-unit id="tl_product.weight.0">
         <source>Weight (g)</source>
         <target>Gewicht (g)</target>
