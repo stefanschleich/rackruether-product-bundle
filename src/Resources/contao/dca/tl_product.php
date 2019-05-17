@@ -219,6 +219,7 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['allergyFriendly'],
 			'exclude'                 => true,
 			'inputType'               => 'checkbox',
+			'default'                 => true,
 			'eval'                    => array('tl_class'=>'w50'),
 			'sql'                     => "char(1) NOT NULL default ''"
 		),
@@ -235,6 +236,7 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['german'],
 			'exclude'                 => true,
 			'inputType'               => 'checkbox',
+			'default'                 => true,
 			'eval'                    => array('tl_class'=>'w50'),
 			'sql'                     => "char(1) NOT NULL default ''"
 		),
