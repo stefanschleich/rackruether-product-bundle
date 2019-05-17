@@ -43,7 +43,8 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 			'fields'                  => array('sorting'),
 			'panelLayout'             => 'filter;sort,search,limit',
 			'headerFields'            => array('title', 'headline', 'jumpTo', 'tstamp', 'allowComments'),
-			'child_record_callback'   => array('tl_product', 'listProducts')
+			'child_record_callback'   => array('tl_product', 'listProducts'),
+			'child_record_class'      => 'no_padding'
 		),
 		'global_operations' => array
 		(
@@ -534,15 +535,7 @@ class tl_product extends Contao\Backend
 	 */
 	public function listProducts($arrRow)
 	{
-		$key = $arrRow['published'] ? 'published' : 'unpublished';
-		$date = Contao\Date::parse(Contao\Config::get('datimFormat'), $arrRow['tstamp']);
-
-		return '
-<div class="cte_type ' . $key . '">' . $date . '</div>
-<div class="limit_height' . (!Contao\Config::get('doNotCollapse') ? ' h40' : '') . '">
-<h2>' . $arrRow['title'] . '</h2>
-' . Contao\StringUtil::insertTagToSrc($arrRow['description']) . '
-</div>' . "\n";
+		return '<div class="tl_content_left">' . $arrRow['title'] . '</div>';
 	}
 
 	/**
