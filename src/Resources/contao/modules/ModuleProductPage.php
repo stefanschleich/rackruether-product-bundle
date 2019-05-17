@@ -17,6 +17,8 @@ use Contao\System;
 use Contao\FilesModel;
 use Contao\Date;
 use Contao\Environment;
+use Contao\Pagemodel;
+use Contao\Config;
 use Patchwork\Utf8;
 
 /**
@@ -34,6 +36,12 @@ class ModuleProductPage extends Module
 	 * @var string
 	 */
 	protected $strTemplate = 'mod_productpage';
+
+	/**
+	 * Target pages
+	 * @var array
+	 */
+	protected $arrTargets = array();
 
 	/**
 	 * Display a wildcard in the back end
@@ -90,6 +98,8 @@ class ModuleProductPage extends Module
 		{
 			/** @var ProductModel $objProduct */
 			$objTemp = (object) $objProduct->row();
+
+			$objTemp->href = $this->generateProductLink($objProduct);
 
 			// Clean the RTE output
 			$objTemp->description = StringUtil::toHtml5($objProduct->description);
@@ -154,6 +164,42 @@ class ModuleProductPage extends Module
 		$this->Template->product = $arrProducts;
 		$this->Template->request = Environment::get('indexFreeRequest');
 		$this->Template->topLink = $GLOBALS['TL_LANG']['MSC']['backToTop'];
+	}
+
+	/**
+	 * Create links and remember pages that have been processed
+	 *
+	 * @param ProductModel $objProduct
+	 *
+	 * @return string
+	 *
+	 * @throws \Exception
+	 */
+	protected function generateProductLink($objProduct)
+	{
+		/** @var ProductCategoryModel $objCategory */
+		$objCategory = $objProduct->getRelated('pid');
+		$jumpTo = (int) $objCategory->jumpTo;
+
+		// A jumpTo page is not mandatory for Product categories (see #6226) but required for the Product list module
+		if ($jumpTo < 1)
+		{
+			throw new \Exception("Product categories without redirect page cannot be used in a Product list");
+		}
+
+		// Get the URL from the jumpTo page of the category
+		if (!isset($this->arrTargets[$jumpTo]))
+		{
+			$this->arrTargets[$jumpTo] = ampersand(Environment::get('request'), true);
+
+			if ($jumpTo > 0 && ($objTarget = PageModel::findByPk($jumpTo)) !== null)
+			{
+				/** @var PageModel $objTarget */
+				$this->arrTargets[$jumpTo] = ampersand($objTarget->getFrontendUrl(Config::get('useAutoItem') ? '/%s' : '/items/%s'));
+			}
+		}
+
+		return sprintf(preg_replace('/%(?!s)/', '%%', $this->arrTargets[$jumpTo]), ($objProduct->alias ?: $objProduct->id));
 	}
 }
 
