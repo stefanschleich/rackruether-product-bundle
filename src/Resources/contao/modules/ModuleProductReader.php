@@ -130,6 +130,7 @@ class ModuleProductReader extends Module
 
 		// Add details
 		$this->Template->orderNumber = $objProduct->orderNumber;
+		$this->Template->packingUnit = $objProduct->packingUnit;
 		$this->Template->weight = $objProduct->weight;
 		$this->Template->allergyFriendly = $objProduct->allergyFriendly;
 		$this->Template->organic = $objProduct->organic;

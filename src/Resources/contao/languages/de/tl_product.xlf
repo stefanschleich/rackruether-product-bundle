@@ -49,6 +49,14 @@
         <source>Please enter the order number of the product.</source>
         <target>Bitte geben Sie die Artikelnummer des Produkts ein.</target>
       </trans-unit>
+      <trans-unit id="tl_product.packingUnit.0">
+        <source>Packing unit</source>
+        <target>VPE</target>
+      </trans-unit>
+      <trans-unit id="tl_product.packingUnit.1">
+        <source>Please enter the packing unit of the product.</source>
+        <target>Bitte geben Sie die Verpackungseinheit des Produkts ein.</target>
+      </trans-unit>
       <trans-unit id="tl_product.weight.0">
         <source>Weight (g)</source>
         <target>Gewicht (g)</target>
