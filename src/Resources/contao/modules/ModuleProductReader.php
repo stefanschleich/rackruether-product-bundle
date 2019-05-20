@@ -127,6 +127,28 @@ class ModuleProductReader extends Module
 		$objProduct->description = StringUtil::toHtml5($objProduct->description);
 
 		$this->Template->description = StringUtil::encodeEmail($objProduct->description);
+
+		// Add details
+		$this->Template->orderNumber = $objProduct->orderNumber;
+		$this->Template->weight = $objProduct->weight;
+		$this->Template->allergyFriendly = $objProduct->allergyFriendly;
+		$this->Template->organic = $objProduct->organic;
+		$this->Template->german = $objProduct->german;
+		$this->Template->gmFree = $objProduct->gmFree;
+
+		// Add ingredients
+		$this->Template->ingredients = StringUtil::deserialize($objProduct->ingredients);
+
+		// Add nutritionals
+		$this->Template->energyKJ = number_format($objProduct->energyKJ, 1, ',', '');
+		$this->Template->energyKcal = number_format($objProduct->energyKcal, 1, ',', '');
+		$this->Template->fat = number_format($objProduct->fat, 1, ',', '');
+		$this->Template->fatAcid = number_format($objProduct->fatAcid, 1, ',', '');
+		$this->Template->carbs = number_format($objProduct->carbs, 1, ',', '');
+		$this->Template->carbsSugar = number_format($objProduct->carbsSugar, 1, ',', '');
+		$this->Template->protein = number_format($objProduct->protein, 1, ',', '');
+		$this->Template->salt = number_format($objProduct->salt, 1, ',', '');
+
 		$this->Template->addImage = false;
 
 		// Add image
