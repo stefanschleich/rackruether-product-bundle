@@ -50,6 +50,12 @@
       <trans-unit id="tl_product.orderNumber.1">
         <source>Please enter the order number of the product.</source>
       </trans-unit>
+      <trans-unit id="tl_product.shopURL.0">
+        <source>Shop-URL</source>
+      </trans-unit>
+      <trans-unit id="tl_product.shopURL.1">
+        <source>Please enter the shop-URL of the product.</source>
+      </trans-unit>
       <trans-unit id="tl_product.packingUnit.0">
         <source>Packing unit</source>
       </trans-unit>

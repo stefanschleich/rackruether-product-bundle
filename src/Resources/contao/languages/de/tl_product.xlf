@@ -49,6 +49,14 @@
         <source>Please enter the order number of the product.</source>
         <target>Bitte geben Sie die Artikelnummer des Produkts ein.</target>
       </trans-unit>
+      <trans-unit id="tl_product.shopURL.0">
+        <source>Shop-URL</source>
+        <target>Shop-URL</target>
+      </trans-unit>
+      <trans-unit id="tl_product.shopURL.1">
+        <source>Please enter the shop-URL of the product.</source>
+        <target>Bitte geben Sie die Shop-URL des Produkts ein.</target>
+      </trans-unit>
       <trans-unit id="tl_product.packingUnit.0">
         <source>Packing unit</source>
         <target>VPE</target>

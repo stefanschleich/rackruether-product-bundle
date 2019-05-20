@@ -103,7 +103,7 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 	'palettes' => array
 	(
 		'__selector__'                => array('addImage', 'addEnclosure', 'overwriteMeta'),
-		'default'                     => '{title_legend},title,subTitle,alias,author;{description_legend},description;{details_legend},orderNumber,packingUnit,weight,allergyFriendly,organic,german,gmFree;{ingredients_legend},ingredients;{nutritional_legend},energyKJ,energyKcal,fat,fatAcid,carbs,carbsSugar,protein,salt;{image_legend},addImage;{enclosure_legend:hide},addEnclosure;{expert_legend:hide},noComments;{publish_legend},published'
+		'default'                     => '{title_legend},title,subTitle,alias,author;{description_legend},description;{details_legend},orderNumber,shopURL,packingUnit,weight,allergyFriendly,organic,german,gmFree;{ingredients_legend},ingredients;{nutritional_legend},energyKJ,energyKcal,fat,fatAcid,carbs,carbsSugar,protein,salt;{image_legend},addImage;{enclosure_legend:hide},addEnclosure;{expert_legend:hide},noComments;{publish_legend},published'
 	),
 
 	// Subpalettes
@@ -202,16 +202,25 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['orderNumber'],
 			'exclude'                 => true,
+			'search'                  => true,
 			'inputType'               => 'text',
 			'eval'                    => array('maxlength'=>5, 'rgxp'=>'natural', 'tl_class'=>'w50'),
 			'sql'                     => "smallint(5) unsigned NOT NULL default 0"
+		),
+		'shopURL' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['shopURL'],
+			'exclude'                 => true,
+			'inputType'               => 'text',
+			'eval'                    => array('rgxp'=>'url', 'decodeEntities'=>true, 'maxlength'=>255, 'tl_class'=>'w50'),
+			'sql'                     => "varchar(255) NOT NULL default ''"
 		),
 		'packingUnit' => array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['packingUnit'],
 			'exclude'                 => true,
 			'inputType'               => 'text',
-			'eval'                    => array('maxlength'=>5, 'rgxp'=>'natural', 'tl_class'=>'clr w50'),
+			'eval'                    => array('maxlength'=>5, 'rgxp'=>'natural', 'tl_class'=>'w50'),
 			'sql'                     => "smallint(5) unsigned NOT NULL default 1"
 		),
 		'weight' => array
