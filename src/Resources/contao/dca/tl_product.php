@@ -562,7 +562,7 @@ class tl_product extends Contao\Backend
 	 */
 	public function listProducts($arrRow)
 	{
-		return '<div class="tl_content_left">' . $arrRow['title'] . '</div>';
+		return '<div class="tl_content_left">' . $arrRow['title'] . ' <span style="color:#999;padding-left:3px">Artikel-Nr: ' . $arrRow['orderNumber'] . '</span></div>';
 	}
 
 	/**
