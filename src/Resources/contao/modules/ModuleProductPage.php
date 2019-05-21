@@ -13,6 +13,7 @@ namespace RackRuether;
 use Contao\Module;
 use Contao\BackendTemplate;
 use Contao\StringUtil;
+use Contao\Input;
 use Contao\System;
 use Contao\FilesModel;
 use Contao\Date;
@@ -78,7 +79,14 @@ class ModuleProductPage extends Module
 	 */
 	protected function compile()
 	{
-		$objProduct = ProductModel::findPublishedByPids($this->product_categories);
+		$arrOptions = [];
+
+		if(Input::get('bio')) {
+			$arrOptions['organic'] = true;
+			$this->Template->organic = true;
+		}
+
+		$objProduct = ProductModel::findPublishedByPids($this->product_categories,$arrOptions);
 
 		if ($objProduct === null)
 		{

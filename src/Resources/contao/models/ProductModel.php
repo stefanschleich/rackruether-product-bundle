@@ -196,6 +196,11 @@ class ProductModel extends \Model
 			$arrColumns[] = "$t.published='1'";
 		}
 
+		if (isset($arrOptions['organic']))
+		{
+			$arrColumns[] = "$t.organic='1'";
+		}
+
 		if (!isset($arrOptions['order']))
 		{
 			$arrOptions['order'] = "$t.pid, $t.sorting";
