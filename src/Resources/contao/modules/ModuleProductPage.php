@@ -81,9 +81,13 @@ class ModuleProductPage extends Module
 	{
 		$arrOptions = [];
 
-		if(Input::get('bio')) {
+		if(Input::get('organic')) {
 			$arrOptions['organic'] = true;
 			$this->Template->organic = true;
+		}
+
+		if(Input::get('grid')) {
+			$this->Template->grid = true;
 		}
 
 		$objProduct = ProductModel::findPublishedByPids($this->product_categories,$arrOptions);
@@ -100,6 +104,8 @@ class ModuleProductPage extends Module
 
 		$arrProducts = array_fill_keys($this->product_categories, array());
 		$rootDir = System::getContainer()->getParameter('kernel.project_dir');
+
+		$this->Template->numProducts = \count($objProduct);
 
 		// Add Products
 		while ($objProduct->next())
