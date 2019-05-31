@@ -86,7 +86,7 @@ class ModuleProductPage extends Module
 			$this->Template->organic = true;
 		}
 
-		if(Input::get('grid')) {
+		if(Input::get('grid') || $GLOBALS['objPage']->isMobile) {
 			$this->Template->grid = true;
 		}
 
