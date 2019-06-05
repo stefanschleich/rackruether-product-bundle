@@ -81,13 +81,13 @@ class ModuleProductPage extends Module
 	{
 		$arrOptions = [];
 
+		if(Input::get('grid') || $GLOBALS['objPage']->isMobile) {
+			$this->Template->grid = true;
+		}
+
 		if(Input::get('organic')) {
 			$arrOptions['organic'] = true;
 			$this->Template->organic = true;
-		}
-
-		if(Input::get('grid') || $GLOBALS['objPage']->isMobile) {
-			$this->Template->grid = true;
 		}
 
 		$objProduct = ProductModel::findPublishedByPids($this->product_categories,$arrOptions);
