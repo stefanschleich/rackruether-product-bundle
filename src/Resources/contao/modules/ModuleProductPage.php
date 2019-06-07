@@ -105,6 +105,7 @@ class ModuleProductPage extends Module
 		$arrProducts = array_fill_keys($this->product_categories, array());
 		$rootDir = System::getContainer()->getParameter('kernel.project_dir');
 
+		$this->Template->numCategories = \count($arrProducts);
 		$this->Template->numProducts = \count($objProduct);
 
 		// Add Products
