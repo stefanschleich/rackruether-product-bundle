@@ -543,7 +543,7 @@ class tl_product extends Contao\Backend
 		// Generate alias if there is none
 		if ($varValue == '')
 		{
-			$varValue = Contao\System::getContainer()->get('contao.slug')->generate($dc->activeRecord->title, RackRuether\ProductCategoryModel::findByPk($dc->activeRecord->pid)->jumpTo ?? null, $aliasExists);
+			$varValue = Contao\System::getContainer()->get('contao.slug')->generate($dc->activeRecord->title, RackRuether\ProductBundle\ProductCategoryModel::findByPk($dc->activeRecord->pid)->jumpTo ?? null, $aliasExists);
 		}
 		elseif ($aliasExists($varValue))
 		{

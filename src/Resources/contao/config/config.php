@@ -22,9 +22,9 @@ array_insert($GLOBALS['FE_MOD'], 3, array
 (
 	'product' => array
 	(
-		'productlist'   => 'RackRuether\ModuleProductList',
-		'productreader' => 'RackRuether\ModuleProductReader',
-		'productpage'   => 'RackRuether\ModuleProductPage'
+		'productlist'   => 'RackRuether\ProductBundle\ModuleProductList',
+		'productreader' => 'RackRuether\ProductBundle\ModuleProductReader',
+		'productpage'   => 'RackRuether\ProductBundle\ModuleProductPage'
 	)
 ));
 
@@ -34,11 +34,12 @@ if (\defined('TL_MODE') && TL_MODE == 'BE')
 	$GLOBALS['TL_CSS'][] = 'bundles/rackruetherproduct/product.min.css|static';
 }
 
-$GLOBALS['TL_MODELS']['tl_product'] = 'RackRuether\ProductModel';
-$GLOBALS['TL_MODELS']['tl_product_category'] = 'RackRuether\ProductCategoryModel';
+$GLOBALS['TL_MODELS']['tl_product'] = 'RackRuether\ProductBundle\ProductModel';
+$GLOBALS['TL_MODELS']['tl_product_category'] = 'RackRuether\ProductBundle\ProductCategoryModel';
 
 // Register hooks
-$GLOBALS['TL_HOOKS']['getSearchablePages'][] = array('RackRuether\ModuleProduct', 'getSearchablePages');
+$GLOBALS['TL_HOOKS']['getPageIdFromUrl'][] = array('RackRuether\ProductBundle\Hooks\GetPageIdFromUrl', 'getPageIdFromUrl');
+$GLOBALS['TL_HOOKS']['getSearchablePages'][] = array('RackRuether\ProductBundle\ModuleProduct', 'getSearchablePages');
 $GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('rackruether_product.listener.insert_tags', 'onReplaceInsertTags');
 
 // Add permissions

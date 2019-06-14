@@ -8,7 +8,7 @@
  * @license LGPL-3.0-or-later
  */
 
-namespace RackRuether;
+namespace RackRuether\ProductBundle;
 
 use Contao\Module;
 use Contao\BackendTemplate;
