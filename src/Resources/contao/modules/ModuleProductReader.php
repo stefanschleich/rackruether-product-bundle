@@ -151,6 +151,9 @@ class ModuleProductReader extends Module
 		$this->Template->protein = System::getFormattedNumber($objProduct->protein, 2);
 		$this->Template->salt = System::getFormattedNumber($objProduct->salt, 2);
 
+		// Add QUID-Addition
+		$this->Template->quid = $objProduct->quid;
+
 		$this->Template->addImage = false;
 
 		// Add image

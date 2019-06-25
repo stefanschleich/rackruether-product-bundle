@@ -140,6 +140,12 @@
       <trans-unit id="tl_product.salt.1">
         <source>Please enter the amount of salt in grams.</source>
       </trans-unit>
+      <trans-unit id="tl_product.quid.0">
+        <source>QUID-Addition</source>
+      </trans-unit>
+      <trans-unit id="tl_product.quid.1">
+        <source>Please enter the QUID-Addition.</source>
+      </trans-unit>
       <trans-unit id="tl_product.addImage.0">
         <source>Add an image</source>
       </trans-unit>
