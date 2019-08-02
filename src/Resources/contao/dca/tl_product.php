@@ -353,7 +353,7 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['quid'],
 			'exclude'                 => true,
 			'inputType'               => 'text',
-			'eval'                    => array('tl_class'=>'long'),
+			'eval'                    => array('tl_class'=>'clr long'),
 			'sql'                     => "varchar(255) NOT NULL default ''"
 		),
 		'addImage' => array
