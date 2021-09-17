@@ -137,6 +137,7 @@ class ModuleProductReader extends Module
 		$this->Template->organic = $objProduct->organic;
 		$this->Template->german = $objProduct->german;
 		$this->Template->gmFree = $objProduct->gmFree;
+		$this->Template->oneHundredPercentBeef = $objProduct->oneHundredPercentBeef;
 
 		// Add ingredients
 		$this->Template->ingredients = StringUtil::deserialize($objProduct->ingredients);

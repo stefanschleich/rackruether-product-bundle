@@ -103,7 +103,7 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 	'palettes' => array
 	(
 		'__selector__'                => array('addImage', 'addEnclosure', 'overwriteMeta'),
-		'default'                     => '{title_legend},title,subTitle,alias,author;{description_legend},description;{details_legend},orderNumber,shopURL,packingUnit,weight,allergyFriendly,organic,german,gmFree;{ingredients_legend},ingredients;{nutritional_legend},energyKJ,energyKcal,fat,fatAcid,carbs,carbsSugar,protein,salt,quid;{image_legend},addImage;{enclosure_legend:hide},addEnclosure;{expert_legend:hide},noComments;{publish_legend},published'
+		'default'                     => '{title_legend},title,subTitle,alias,author;{description_legend},description;{details_legend},orderNumber,shopURL,packingUnit,weight,allergyFriendly,organic,german,gmFree,oneHundredPercentBeef;{ingredients_legend},ingredients;{nutritional_legend},energyKJ,energyKcal,fat,fatAcid,carbs,carbsSugar,protein,salt,quid;{image_legend},addImage;{enclosure_legend:hide},addEnclosure;{expert_legend:hide},noComments;{publish_legend},published'
 	),
 
 	// Subpalettes
@@ -262,6 +262,14 @@ $GLOBALS['TL_DCA']['tl_product'] = array
 		'gmFree' => array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['gmFree'],
+			'exclude'                 => true,
+			'inputType'               => 'checkbox',
+			'eval'                    => array('tl_class'=>'w50'),
+			'sql'                     => "char(1) NOT NULL default ''"
+		),
+		'oneHundredPercentBeef' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_product']['oneHundredPercentBeef'],
 			'exclude'                 => true,
 			'inputType'               => 'checkbox',
 			'eval'                    => array('tl_class'=>'w50'),

@@ -105,6 +105,14 @@
         <source>Mark the Product as GM-Free.</source>
         <target>Produkt als Gentechnikfrei markieren.</target>
       </trans-unit>
+      <trans-unit id="tl_product.oneHundredPercentBeef.0">
+        <source>100% Beef</source>
+        <target>100% Rind</target>
+      </trans-unit>
+      <trans-unit id="tl_product.oneHundredPercentBeef.1">
+        <source>Mark the Product as 100% Beef.</source>
+        <target>Produkt als 100% Rind markieren.</target>
+      </trans-unit>
       <trans-unit id="tl_product.ingredients.0">
         <source>Ingredients</source>
         <target>Zutaten</target>

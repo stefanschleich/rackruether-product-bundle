@@ -92,6 +92,12 @@
       <trans-unit id="tl_product.gmFree.1">
         <source>Mark the Product as GM-Free.</source>
       </trans-unit>
+      <trans-unit id="tl_product.oneHundredPercentBeef.0">
+        <source>100% Beef</source>
+      </trans-unit>
+      <trans-unit id="tl_product.oneHundredPercentBeef.1">
+        <source>Mark the Product as 100% Beef.</source>
+      </trans-unit>
       <trans-unit id="tl_product.energyKJ.0">
         <source>Energy (kJ)</source>
       </trans-unit>
