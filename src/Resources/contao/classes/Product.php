@@ -1,8 +1,8 @@
 <?php
 
-namespace RackRuether\ProductBundle\Hooks;
+namespace RackRuether;
 
-class GetPageIdFromUrl
+class Product
 {
     public function getPageIdFromUrl($arrFragments)
     {
@@ -15,3 +15,5 @@ class GetPageIdFromUrl
         return $arrFragments;
     }
 }
+
+class_alias(Product::class, 'Product');

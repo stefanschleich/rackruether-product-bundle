@@ -8,8 +8,9 @@
  * @license LGPL-3.0-or-later
  */
 
-namespace RackRuether\ProductBundle;
+namespace RackRuether;
 
+use Contao\Model;
 use Contao\Model\Collection;
 
 /**
@@ -110,7 +111,7 @@ use Contao\Model\Collection;
  *
  * @author Leo Feyer <https://github.com/leofeyer>
  */
-class ProductModel extends \Model
+class ProductModel extends Model
 {
 
 	/**

@@ -14,8 +14,8 @@ namespace RackRuether\ProductBundle\EventListener;
 
 use Contao\Config;
 use Contao\CoreBundle\Framework\ContaoFramework;
-use RackRuether\ProductBundle\ProductCategoryModel;
-use RackRuether\ProductBundle\ProductModel;
+use RackRuether\ProductCategoryModel;
+use RackRuether\ProductModel;
 use Contao\PageModel;
 use Contao\StringUtil;
 

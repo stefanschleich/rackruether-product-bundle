@@ -8,7 +8,7 @@
  * @license LGPL-3.0-or-later
  */
 
-namespace RackRuether\ProductBundle;
+namespace RackRuether;
 
 use Contao\Frontend;
 use Contao\Date;

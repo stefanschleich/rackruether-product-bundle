@@ -17,8 +17,8 @@ use Contao\CoreBundle\Framework\FrameworkAwareTrait;
 use Contao\CoreBundle\Picker\AbstractPickerProvider;
 use Contao\CoreBundle\Picker\DcaPickerProviderInterface;
 use Contao\CoreBundle\Picker\PickerConfig;
-use RackRuether\ProductBundle\ProductCategoryModel;
-use RackRuether\ProductBundle\ProductModel;
+use RackRuether\ProductCategoryModel;
+use RackRuether\ProductModel;
 
 class ProductPickerProvider extends AbstractPickerProvider implements DcaPickerProviderInterface, FrameworkAwareInterface
 {
