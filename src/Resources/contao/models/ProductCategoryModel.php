@@ -10,6 +10,7 @@
 
 namespace RackRuether;
 
+use Contao\Model;
 use Contao\Model\Collection;
 
 /**
