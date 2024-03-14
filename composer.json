@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "php": "^7.1",
+        "php": "^7.4 || ^8.0",
         "contao/core-bundle": "^4.7",
         "friendsofsymfony/http-cache": "^2.4",
         "patchwork/utf8": "^1.2",
